@@ -1,0 +1,36 @@
+=== Security Audit Report: Thu Nov 19 23:45:01 UTC 2026 ===
+[*] Verified Public-Key Logins:
+2026-11-19T22:35:41.596061+00:00 ip-172-31-46-188 sshd-session[1132]: Accepted publickey for ubuntu from 96.231.189.149 port 58563 ssh2: RSA SHA256:wnUEoao7CcSr6ztrcmy1TiK1k8qC/TW3XbP2dc0rhMY
+2026-11-19T23:35:05.967507+00:00 ip-172-31-46-188 sshd-session[7243]: Accepted publickey for ubuntu from 96.231.189.149 port 64739 ssh2: RSA SHA256:wnUEoao7CcSr6ztrcmy1TiK1k8qC/TW3XbP2dc0rhMY
+[*] Failed/Closed SSH Attempts:
+2026-11-19T22:35:41.596061+00:00 ip-172-31-46-188 sshd-session[1132]: Accepted publickey for ubuntu from 96.231.189.149 port 58563 ssh2: RSA SHA256:wnUEoao7CcSr6ztrcmy1TiK1k8qC/TW3XbP2dc0rhMY
+2026-11-19T23:35:05.967507+00:00 ip-172-31-46-188 sshd-session[7243]: Accepted publickey for ubuntu from 96.231.189.149 port 64739 ssh2: RSA SHA256:wnUEoao7CcSr6ztrcmy1TiK1k8qC/TW3XbP2dc0rhMY
+[*] Failed/Closed SSH Attempts:
+2026-11-19T23:38:04.391294+00:00 ip-172-31-46-188 sshd-session[8743]: Connection closed by 127.0.0.1 port 60762
+2026-11-19T23:42:16.383758+00:00 ip-172-31-46-188 sshd-session[8807]: Connection closed by 127.0.0.1 port 59242
+[*] Sudo Privilege Escalation Events:
+2026-11-19T23:38:04.391294+00:00 ip-172-31-46-188 sshd-session[8743]: Connection closed by 127.0.0.1 port 60762
+2026-11-19T23:42:16.383758+00:00 ip-172-31-46-188 sshd-session[8807]: Connection closed by 127.0.0.1 port 59242
+[*] Sudo Privilege Escalation Events:
+2026-11-19T23:35:37.008550+00:00 ip-172-31-46-188 sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T23:35:37.014895+00:00 ip-172-31-46-188 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+2026-11-19T23:35:37.015085+00:00 ip-172-31-46-188 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/aws-linux-server-hardening-lab ; USER=root ; COMMAND=/usr/bin/systemctl restart ssh
+2026-11-19T23:35:37.072203+00:00 ip-172-31-46-188 sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T23:38:10.583985+00:00 ip-172-31-46-188 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+2026-11-19T23:38:10.584116+00:00 ip-172-31-46-188 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/aws-linux-server-hardening-lab ; USER=root ; COMMAND=/usr/bin/timeout 5 tcpdump -i any port 22 or port 80 -c 25 -w audits/ssh_http_capture.pcap
+2026-11-19T23:38:15.600764+00:00 ip-172-31-46-188 sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T23:42:22.567372+00:00 ip-172-31-46-188 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+2026-11-19T23:42:22.567627+00:00 ip-172-31-46-188 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/aws-linux-server-hardening-lab ; USER=root ; COMMAND=/usr/bin/timeout 5 tcpdump -i any port 22 or port 80 -c 25 -w audits/ssh_http_capture.pcap
+2026-11-19T23:42:27.581595+00:00 ip-172-31-46-188 sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T23:35:37.008550+00:00 ip-172-31-46-188 sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T23:35:37.014895+00:00 ip-172-31-46-188 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+2026-11-19T23:35:37.015085+00:00 ip-172-31-46-188 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/aws-linux-server-hardening-lab ; USER=root ; COMMAND=/usr/bin/systemctl restart ssh
+2026-11-19T23:35:37.072203+00:00 ip-172-31-46-188 sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T23:38:10.583985+00:00 ip-172-31-46-188 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+2026-11-19T23:38:10.584116+00:00 ip-172-31-46-188 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/aws-linux-server-hardening-lab ; USER=root ; COMMAND=/usr/bin/timeout 5 tcpdump -i any port 22 or port 80 -c 25 -w audits/ssh_http_capture.pcap
+2026-11-19T23:38:15.600764+00:00 ip-172-31-46-188 sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T23:42:22.567372+00:00 ip-172-31-46-188 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+2026-11-19T23:42:22.567627+00:00 ip-172-31-46-188 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/aws-linux-server-hardening-lab ; USER=root ; COMMAND=/usr/bin/timeout 5 tcpdump -i any port 22 or port 80 -c 25 -w audits/ssh_http_capture.pcap
+2026-11-19T23:42:27.581595+00:00 ip-172-31-46-188 sudo: pam_unix(sudo:session): session closed for user root
+----------------------------------------
+----------------------------------------

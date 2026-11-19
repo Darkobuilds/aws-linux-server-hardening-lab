@@ -1,0 +1,4 @@
+23:42:22.577867 ens5  Out IP <REDACTED_IP>.22 > <REDACTED_IP>.64739: Flags [P.], seq 1301889192:1301889356, ack 475777458, win 1133, length 164
+23:42:22.579549 ens5  Out IP <REDACTED_IP>.22 > <REDACTED_IP>.64739: Flags [P.], seq 164:296, ack 1, win 1133, length 132
+23:42:22.596507 ens5  In  IP <REDACTED_IP>.64739 > <REDACTED_IP>.22: Flags [.], ack 164, win 252, length 0
+23:42:22.646829 ens5  In  IP <REDACTED_IP>.64739 > <REDACTED_IP>.22: Flags [.], ack 296, win 251, length 0

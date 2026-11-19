@@ -1,0 +1,3 @@
+[2026-11-19T23:42:16.051598+00:00] Threat Monitoring Summary
+[OK] Zero brute-force threshold breaches detected.
+[INFO] Total privileged sudo executions logged: 29
